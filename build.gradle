@@ -1,0 +1,38 @@
+import javafx.scene.transform.Translate
+
+group 'com.pigge'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+/*解决IDEA不部署资源文件的BUG*/
+/*官方方法*/
+idea {
+    module {
+        inheritOutputDirs = true
+    }
+}
+/*民间方法
+task copyTestResources(type: Copy) {
+    from "${projectDir}/src/test/resources"
+    into "${buildDir}/classes/test"
+}
+processTestResources.dependsOn copyTestResources
+*/
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'javax', name: 'javaee-api', version: '7.0'
+    compile group: 'org.apache.struts', name: 'struts2-core', version: '2.5.10.1'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.0.Final'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.41'
+    compile group: 'org.apache.struts', name: 'struts2-json-plugin', version: '2.5.10.1'
+    compile group: 'org.json', name: 'json', version: '20160810'
+}
+

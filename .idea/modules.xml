@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SSH.iml" filepath="$PROJECT_DIR$/.idea/modules/SSH.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SSH_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SSH_main.iml" group="SSH" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SSH_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SSH_test.iml" group="SSH" />
+    </modules>
+  </component>
+</project>
